@@ -159,6 +159,7 @@ footer{
 /** East Egg (desktops, 1250px and up) *!*/
 @media screen and (min-width:1100px) {
     body {
+        height: 100vh;
         background: url("https://i.ytimg.com/vi/0gPjLWGYpIM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTc2EFGonMLG24hzJllPNnmlBXsg") center center/cover no-repeat;
     }
 
