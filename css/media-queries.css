@@ -6,25 +6,48 @@
     padding: 0;
     border: 0;
 }
+
 html {
     /* resetting font size to 10px makes rem math much easier*/
     font-size: 10px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/*div.truncation {*/
+/*    width: 100%;*/
+/*}*/
+
+/*p.clipped {*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    text-overflow: clip;*/
+/*}*/
+
+/*p.ellipsis {*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*}*/
+
+/*Not working as intended ^*/
+
+/*Drop shadow time!*/
 img {
     max-width: 100%;
     display: block;
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+
 }
 
-body{
+body {
     width: 100vw;
     padding: 12px;
 
 }
 
-.alert-info{
-width: 100%;
+.alert-info {
+    width: 100%;
     max-width: 992px;
     height: 50px;
     background: #bafff5;
@@ -35,28 +58,31 @@ width: 100%;
     margin-bottom: 1rem;
 }
 
-.alert-info a{
+.alert-info a {
     text-decoration: none;
     font-size: 1.4rem;
     letter-spacing: 0.09em;
     color: black;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 5rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
-.nav-links{
+
+.nav-links {
     width: 100%;
     cursor: crosshair;
 
 }
+
 .happy {
     cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 }
-.nav-links li{
+
+.nav-links li {
     display: flex;
     width: 100%;
     max-width: 992px;
@@ -69,34 +95,41 @@ h1{
     /*display: grid;*/
     /*place-items: center;*/
 }
-.nav-links li a{
+
+.nav-links li a {
     font-size: 1.7rem;
 
 }
 
-.header-img{
+.header-img {
     margin-bottom: 2rem;
 }
-h2{
+
+h2 {
     font-size: 2.5rem;
     padding-bottom: 9px;
 }
-p{
+
+p {
     font-size: 1.5rem;
     /*letter-spacing: 0.02em;*/
 }
-#main{
+
+#main {
     padding-bottom: 40px;
 }
-.footer-wrapper{
+
+.footer-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer{
+
+footer {
     padding: 80px 0 20px 0;
 }
-#social-media-links i{
+
+#social-media-links i {
     padding-right: 12px;
     font-size: 2rem;
     color: lawngreen;
@@ -105,17 +138,19 @@ footer{
     display: none;
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .container {
-        max-width:1000px;
+        max-width: 1000px;
         width: 100%;
         margin: 0 auto;
     }
-  .alert-info {
-      display: none;
 
-  }
-    .nav-links li{
+    .alert-info {
+        display: none;
+
+    }
+
+    .nav-links li {
         display: inline;
         /*width: 100%;*/
         /*max-width: 900px;*/
@@ -131,7 +166,8 @@ footer{
         /*flex-direction: reverse-column;*/
 
     }
-    .nav-links li a{
+
+    .nav-links li a {
         font-size: 2.7rem;
         padding: 10px;
     }
@@ -142,22 +178,24 @@ footer{
         justify-content: space-between;
         margin-bottom: 35px;
     }
-    #main{
+
+    #main {
         float: left;
         width: 60%;
-        display:inline-block;
+        display: inline-block;
         padding-right: 50px;
         color: orangered;
 
     }
+
     .sub-section {
         width: 40%;
         display: inline-block;
     }
+
     /*.img {*/
     /*    float: right;*/
     /*}*/
-
     .header-img {
         margin-bottom: 35px;
     }
@@ -180,7 +218,7 @@ footer{
 }
 
 /** East Egg (desktops, 1250px and up) *!*/
-@media screen and (min-width:1100px) {
+@media screen and (min-width: 1100px) {
     body {
         height: 100vh;
         background: url("https://i.ytimg.com/vi/0gPjLWGYpIM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTc2EFGonMLG24hzJllPNnmlBXsg") center center/cover no-repeat;
