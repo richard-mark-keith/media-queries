@@ -56,11 +56,11 @@ h1{
     height: 55px;
     background: lightgray;
     margin-bottom: 1.8rem;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*display: grid;*/
+    /*place-items: center;*/
 }
 .nav-links li a{
     font-size: 1.7rem;
@@ -93,3 +93,47 @@ footer{
     padding-right: 12px;
     font-size: 2rem;
 }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width:992px) {
+    .container {
+        max-width:1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+  .alert-info {
+      display: none;
+
+  }
+    .nav-links li{
+        display: inline;
+        /*width: 100%;*/
+        /*max-width: 900px;*/
+        /*height: 55px;*/
+        background: none;
+        background-image: linear-gradient(45deg, red, yellow);
+        /*margin-bottom: 1.8rem;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*display: grid;*/
+        /*place-items: center;*/
+        /*flex-direction: reverse-column;*/
+
+    }
+    .nav-links li a{
+        font-size: 2.7rem;
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
