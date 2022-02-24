@@ -130,6 +130,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 35px;
     }
     #main{
         float: left;
@@ -145,6 +146,25 @@ footer{
     /*.img {*/
     /*    float: right;*/
     /*}*/
+
+    .header-img {
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        margin-bottom: 35px;
+    }
+}
+
+/** East Egg (desktops, 1250px and up) *!*/
+@media screen and (min-width:1100px) {
+    body {
+        background: url("https://i.ytimg.com/vi/0gPjLWGYpIM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTc2EFGonMLG24hzJllPNnmlBXsg") center center/cover no-repeat;
+    }
+
+    .header-img {
+        visibility: hidden;
+    }
 }
 
 
